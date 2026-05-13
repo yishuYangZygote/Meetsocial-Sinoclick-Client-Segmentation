@@ -1,0 +1,160 @@
+Client Segmentation Modeling Plan (Revised Version V2.0)
+Project Chair: ChengQi
+Objective: Based on existing client data, perform client segmentation to precisely identify client groups with different characteristics and needs, providing data-driven decision support for subsequent operational strategies (such as matching differentiated services, enhancing client LTV, identifying incubation potential, etc.).
+
+Phase 1: Project Foundation & Data Understanding (Phase 1: Foundation & Data Understanding)
+Core Philosophy: Modeling begins with data and succeeds through business understanding. The goal of this phase is to ensure that every feature we use has been carefully processed and can most accurately reflect business logic, laying a solid foundation for subsequent unsupervised learning.
+
+Data Source Integration and Exploratory Data Analysis (EDA)
+
+Data Loading: Load data_revised.csv (9,999 client records) as the base dataset.
+
+Data Dictionary Alignment: Using the Unified Data Dictionary_v1.0.xlsx as the core reference, combined with Label_Table_v1_revised.pdf and .xlsx files, finalize the business meaning, data type, and value range for each field.
+
+Initial Diagnostics: Perform distribution checks on key numerical labels (e.g., month_avg_spend_amt, days_since_last_spend) to confirm their right-skewness; conduct cardinality statistics on categorical labels to identify high and low cardinality variables.
+
+Feature Engineering (Feature Engineering) -- The Cornerstone of Model Expressiveness
+In this step, we will strictly follow the principle of "preparing different feature sets for different phases" and create two feature sets.
+
+Feature Set A (for clustering model training): The goal is mathematical precision.
+
+Performance Labels:
+
+Processing Method: Apply log1p logarithmic transformation to all right-skewed numerical labels (e.g., various spending and top-up amounts), followed by Standardization.
+
+Business Logic: Eliminate the impact of different scales and weaken the excessive influence of extreme values (whale clients) on distance calculations, allowing the model to fairly evaluate each client's overall performance rather than being dominated by a single metric.
+
+Descriptive Labels:
+
+Low-cardinality ordinal variables (e.g., corporation_size): Apply ordinal integer encoding to preserve the inherent hierarchical relationship.
+
+Low-cardinality nominal variables (e.g., main_media): Apply One-Hot Encoding to ensure independence between categories.
+
+High-cardinality variables (e.g., top_l2_category): As we discussed previously, apply Target Encoding. We will construct a proxy target (e.g., is_high_spend) and use cross-validation for encoding, capturing industry value potential while strictly preventing data leakage.
+
+High missing-rate variables (e.g., ads_team_size): Explicitly exclude from this phase's training feature set to avoid its approximately 94% unknown values contaminating the model.
+
+Business Insight Labels (e.g., high-potential/high-risk categories): Include the is_core_category_... (4) and has_high_risk_flag_... (4) independent 1/0 labels we created into the model -- these are key quantifications of business experience.
+
+Feature Set B (for cluster interpretation and profiling): The goal is business interpretability.
+
+Core Processing: Perform binning/stratification on key continuous variables.
+
+month_avg_spend_amt -> Spending Tier (e.g., High/Medium/Low Value)
+
+days_since_last_spend -> Activity Status (e.g., Active Period/Silent Period/Churned Period)
+
+value_concentration_index -> Spending Concentration (e.g., Concentrated/Dispersed)
+
+Business Logic: Transform complex continuous values into language that business personnel can directly understand and use.
+
+Phase 2: Unsupervised Clustering & Cluster Count Determination (Phase 2: Modeling & Cluster Validation)
+Core Philosophy: Combine mathematical objectivity with business interpretability to find the "just right" number of client groups. Too many groups are unmanageable; too few are overly coarse.
+
+Modeling Method Selection
+
+Primary Model Recommendation: K-Prototypes
+
+Alignment with Business Objectives: Our dataset is a typical mixed-type dataset (containing both numerical and categorical types). K-Prototypes is specifically designed for handling such data -- it can simultaneously use Euclidean distance to calculate similarity for numerical features and Hamming distance for categorical features. This perfectly fits our data structure and avoids the problem of having to improperly convert categorical variables to numerical ones when using K-Means alone.
+
+Dimensionality Reduction Method and Alternative Models:
+
+Dimensionality Reduction Method: If the number of features remains large (>50), consider using FAMD (Factor Analysis of Mixed Data) for dimensionality reduction. FAMD is the PCA for mixed data types, effectively extracting key information from both numerical and categorical variables.
+
+Alternative Validation Model: Try using GMM (Gaussian Mixture Model) + data reduced by FAMD for clustering. GMM can provide the "probability" of each client belonging to different groups -- this "soft clustering" result can sometimes offer more flexible business insights.
+
+Cluster Count (K Value) Determination Method -- "Dual Elbow Test"
+We will use a combination of the "Data Science Elbow" and the "Business Value Elbow" to determine the optimal number of clusters.
+
+Mathematical Metrics (Data Science Elbow):
+
+Elbow Method: Observe the curve of Within-Cluster Sum of Squares (WCSS) as K changes, looking for the "elbow point."
+
+Silhouette Score: Calculate the mean silhouette score of all samples for different K values. Select the K value with the highest score and relatively uniform cluster widths.
+
+Gap Statistic: A more robust method for finding the elbow point by comparing against random data to determine the optimal K value.
+
+Output: Through the above methods, we will obtain a mathematically recommended K value range, for example K = 4 to 7.
+
+Business Interpretability (Business Value Elbow):
+
+We will perform clustering for each K value within the above range (4, 5, 6, 7) and quickly generate preliminary group profiles.
+
+Evaluate together with the business team:
+
+Differentiation: Are the core characteristics (e.g., spending level, activity level, industry preferences) of these K groups sufficiently distinct? Can we distinguish them using simple business language?
+
+Uniqueness: Does a group exist whose feature combination is highly unique, revealing a client sub-market we had not previously discovered?
+
+Actionability: For these K groups, can we formulate K differentiated operational strategies? If the profiles of Group 5 and Group 6 are highly similar with converging operational strategies, then K=5 might be the better choice.
+
+Final Decision: Select a K value that is both statistically significant and allows every group to have a clear, unique, and actionable business profile as the final number of clusters.
+
+Phase 3: Model Output & Business Value Validation (Phase 3: Profiling & Business Validation)
+Core Philosophy: Let the data speak -- transform cold clustering labels into vivid, credible, and usable client profiles.
+
+Cluster Profiling (Cluster Profiling)
+
+Quantitative Profiling:
+
+Generate Comparison Table: Calculate the mean/median for each cluster on core performance labels and compare against the overall mean. For example:
+| Feature | Group A | Group B | Group C | Group D | Overall Mean |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| Monthly Avg Spend | $50,000 | $5,000 | $500 | $8,000 | $12,000 |
+| Last 30-Day Spend | $40,000 | $8,000 | $0 | $1,000 | $9,000 |
+| Active Account Ratio | 95% | 70% | 10% | 65% | 60% |
+
+Visualization: Use radar charts or bar charts to intuitively display each group's "capability pentagon," making differences immediately apparent.
+
+Qualitative Profiling:
+
+Generate Distribution Table: Calculate the distribution of each cluster across descriptive labels. For example:
+| Feature | Group A | Group B | Group C | Group D |
+| :--- | :--- | :--- | :--- | :--- |
+| Core Category | Clothing(60%) | Consumer Electronics(50%) | Unknown(80%) | Beauty & Personal Care(70%) |
+| Primary Channel | Facebook(70%) | Google(65%) | Organic Traffic(50%) | TikTok(55%) |
+
+Assign Business Labels: Based on the quantitative and qualitative profiling above, assign a vivid business name to each group, for example:
+
+Group A -> "High-Value Social Media Core Group"
+
+Group B -> "High-Potential Search Growth Group"
+
+Group C -> "Low-Value Churn Risk Group"
+
+Group D -> "High-Activity Emerging Channel Potential Group"
+
+Interpretability Validation and Business Logic Mining
+
+Core Tool: Decision Tree. This is our "killer weapon" for validating and explaining cluster results.
+
+Methodology:
+
+Use the clustering results (e.g., Group A/B/C/D) as the target variable (Y).
+
+Use our prepared Feature Set B (binned, interpretable) as the input variables (X).
+
+Train a decision tree model to "predict" which group a client belongs to.
+
+Value Demonstration:
+
+The decision tree's split rules are the core definitions of each cluster. For example, the top-level rule might be: "If Spending Tier = 'High Value' AND Primary Channel = 'Facebook', then the client most likely belongs to the 'High-Value Social Media Core Group'."
+
+These rules must corroborate our profiling analysis results, thereby proving that our segmentation is supported by strong business logic, rather than being a random "black box" result.
+
+Additionally, the decision tree may discover hidden rules we had not noticed, providing deeper business insights.
+
+Phase 4: Delivery & Outlook (Phase 4: Delivery & Outlook)
+Deliverables:
+
+A list containing each client ID and their final cluster label.
+
+A detailed client segmentation analysis report including all the profiling analysis, decision tree rules, and preliminary operational recommendations for each group above.
+
+Future Iterations:
+
+This segmentation is based on a snapshot at the current point in time. It is recommended to update the model quarterly or semi-annually to track the dynamic migration of client groups.
+
+In subsequent operations, new dimensions of client data can be collected (e.g., client service satisfaction, depth of product feature usage, etc.) and incorporated into the model for more precise secondary segmentation.
+
+Through the rigorous execution of the above four phases, we will not only complete a high-quality client segmentation but also ensure that its results are firmly tied to business objectives and logic, truly empowering the business and creating value.

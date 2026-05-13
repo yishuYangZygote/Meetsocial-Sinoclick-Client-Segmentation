@@ -1,0 +1,109 @@
+================================================================================
+G TABLE INTRODUCTION - ENGLISH TRANSLATION
+================================================================================
+Source: G表格介绍.pdf
+Table: ads_admkt_adver_tt_country_ad_category_level_v3
+Platform: DataWorks / DataMap (Alibaba Cloud MaxCompute)
+================================================================================
+
+TABLE NAME: ads_admkt_adver_tt_country_ad_category_level_v3
+SUBTITLE: MaxCompute - Advertising Domain - TikTok Channel - Country & Ad Category Level Attribution Data v3
+
+--------------------------------------------------------------------------------
+TABLE BASIC INFORMATION
+--------------------------------------------------------------------------------
+Model:                      (View Code)
+Views:                      2
+Reads:                      232
+Favorites:                  0
+
+Output Node:                ads_admkt_adver_tt_country_ad_category_level_v3 (10001370211)
+MaxCompute Project:         odps.sino_dc_ads
+Region of Current Workspace: cn-shenzhen
+Region of Compute Engine Instance: cn-shenzhen
+Entity ID:                  maxcomputetable:::sino_dc_ads::ads_admkt_adver_tt_country_ad_category_level_v3
+Approver:                   Tang Yaozu (唐耀祖)
+Health Status:              Excellent
+Table Owner:                hi30516830@aliyun.com:nico.tang
+Created At:                 Dec 5, 2024, 18:53:49
+Lifecycle:                  Permanent
+Partitioned Table:          Yes
+Storage:                    2.50 GB
+Table Description:          Advertising Domain - TikTok Channel - Country & Ad Category Level Attribution Data v3
+Table Type:                 TABLE
+Classifications:            HashCluster, Total 2 Tags
+
+--------------------------------------------------------------------------------
+MODEL INFORMATION
+--------------------------------------------------------------------------------
+Model:                      (View Model)
+Data Layer:                 Application Data Layer (应用数据层)
+Business Category:          Advertising Marketing - Advertising Public Marketplace (广告营销-广告公共集市)
+Data Domain:                -
+Business Process:           -
+Storage Policy:             -
+
+--------------------------------------------------------------------------------
+BUSINESS INFORMATION
+--------------------------------------------------------------------------------
+Workspace:                  Shennuo Data Platform ADS (深诺数据中台ads)
+Environment:                Production
+Category:                   -
+Display Name:               -
+
+--------------------------------------------------------------------------------
+PERMISSION INFORMATION
+--------------------------------------------------------------------------------
+My Permissions:             Click to View
+
+--------------------------------------------------------------------------------
+TECHNICAL INFORMATION
+--------------------------------------------------------------------------------
+DDL Statement Updated At:   Feb 9, 2025, 04:49:35
+Data Updated At:            Jul 23, 2025, 15:33:49
+Last Data Viewing Time:     Jul 23, 2025, 15:33:58
+
+--------------------------------------------------------------------------------
+FIELD INFORMATION (30 fields shown)
+--------------------------------------------------------------------------------
+No.  Field Name                    Type      Description (English)
+---  ----------                    ----      ---------------------
+1    channel_name                  string    Media channel name (TikTok)
+2    channel_id                    string    Media channel ID (18)
+3    calendar_date                 string    Business date
+4    year_month                    string    Year-month (no underscore, e.g. 202303)
+5    monday_of_week                string    Monday of the current week (2023-03-06)
+6    sunday_of_week                string    Sunday of the current week (2023-03-12)
+7    month_first_date              string    First day of the month (2023-03-01)
+8    month_last_date               string    Last day of the month (2023-03-31)
+9    quarter_first_date            string    First day of the quarter (2023-01-01)
+10   quarter_last_date             string    Last day of the quarter (2023-03-31)
+11   corporation_id                string    Contracting entity ID
+12   account_id                    string    Account ID
+13   campaign_id                   string    Campaign ID (ad series)
+14   adgroup_id                    string    Ad group ID
+15   ad_id                         string    Ad ID
+16   country_code                  string    Country code (ISO 3166-2 standard)
+17   country_name_en               string    Country name in English
+18   country_name_ch               string    Country name in Chinese
+19   custom_region                 string    Custom region (Japan-Korea / Southeast Asia, etc.)
+20   category_level1_id            string    Level-1 category ID
+21   category_level1_name_en       string    Level-1 category English name
+22   category_level1_name_ch       string    Level-1 category Chinese name
+23   category_level2_id            string    Level-2 category ID
+24   category_level2_name_en       string    Level-2 category English name
+25   category_level2_name_ch       string    Level-2 category Chinese name
+26   category_level3_id            string    Level-3 category ID
+27   category_level3_name_en       string    Level-3 category English name
+28   category_level3_name_ch       string    Level-3 category Chinese name
+29   category_level4_id            string    Level-4 category ID
+30   category_level4_name_en       string    Level-4 category English name
+
+NOTE: The table continues beyond the 30 fields shown in the screenshot.
+The visible fields cover date dimensions, ad hierarchy (campaign > adgroup > ad),
+geographic dimensions (country, custom region), and ad category levels (1-4)
+with both English and Chinese names.
+
+================================================================================
+END OF TRANSLATION
+================================================================================

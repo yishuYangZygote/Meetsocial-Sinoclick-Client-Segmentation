@@ -1,0 +1,159 @@
+================================================================================
+FINAL LABEL TABLE DATAWORKS INTRODUCTION - ENGLISH TRANSLATION
+(Handover with KA_PA version)
+================================================================================
+Source: 最终标签表的dataworks介绍.pdf (Final Label Table DataWorks Introduction)
+Table: client_segmentation_no_advertising_effect_20250807_opendatemb_randomized_9999
+Platform: DataWorks (Alibaba Cloud MaxCompute)
+================================================================================
+
+TABLE NAME: client_segmentation_no_advertising_effect_20250807_opendatemb_randomized_9999
+Platform: MaxCompute
+
+Actions Available: Add to Album/View Added Albums | Favorites | Generate API | Data Analysis
+
+--------------------------------------------------------------------------------
+TABLE BASIC INFORMATION (表基础信息)
+--------------------------------------------------------------------------------
+Views (浏览次数):           0
+Reads (读取次数):           0
+Favorites (收藏次数):       0
+
+Output Task (产出任务):     None (无)
+MaxCompute Project:         odps.sino_dc_ads_dev
+Entity ID:                  maxcompute-table:::sino_dc_ads_dev::client_segmentation_no_advertising_effect_20250807_opendatemb_randomized_9999
+Approver (审批负责人):      Yang Yishu (杨宜树)
+Table Owner:                hi30516830@aliyun.com:fergie.yang
+Created At (创建时间):      August 11, 2025, 14:28:21
+Lifecycle (生命周期):       180
+Partitioned Table (是否分区表): No (否)
+Storage (存储量):           2.02 MB
+Table Description (表说明): Recommend Table Description (推荐表说明)
+Table Type (表类型):        TABLE
+Tags (标签):                (none)
+
+--------------------------------------------------------------------------------
+BUSINESS INFORMATION (业务信息)
+--------------------------------------------------------------------------------
+Workspace (工作空间):       Shennuo Data Platform ADS (深诺数据中台ads)
+Environment (环境):         (not specified)
+Category (所属类目):        -
+Chinese Name (中文名):      -
+
+--------------------------------------------------------------------------------
+PERMISSION INFORMATION
+--------------------------------------------------------------------------------
+My Permissions (我的权限):  Click to View (点击查看)
+
+--------------------------------------------------------------------------------
+TECHNICAL INFORMATION (技术信息)
+--------------------------------------------------------------------------------
+DDL Last Modified (DDL最后变更时间):      August 11, 2025, 14:28:21
+Data Last Modified (最后数据变更时间):    August 11, 2025, 14:28:21
+Last Data Viewing Time (最后数据查看时间): -
+
+--------------------------------------------------------------------------------
+TABS AVAILABLE
+--------------------------------------------------------------------------------
+- Detail Information (明细信息)
+- Output Information (产出信息)
+- Lineage Information (血缘信息)
+- Usage Notes (使用说明)
+- Data Preview (数据预览)
+- Data Insights (数据洞察)
+
+Sub-tabs: Field Information (字段信息) | Change Records (变更记录)
+
+Toolbar: Search Field (搜索字段) | Recommend Field Description (推荐字段描述) |
+         Generate Select | Generate DDL | More (更多)
+
+Column Headers: No. (序号) | Field Name (字段名称) | Type (类型) |
+                Description (描述) | Business Description (业务描述) |
+                Primary Key (主键) | Foreign Key (外键) | Popularity (热度) |
+                Security Level (安全等级) | Actions (操作)
+
+--------------------------------------------------------------------------------
+FIELD INFORMATION (76 fields total)
+--------------------------------------------------------------------------------
+No.  Field Name                              Type              Primary Key
+---  ----------                              ----              -----------
+1    corporation_id                           string            No
+2    corporation_name                         string            No
+3    total_account_count                      bigint            No
+4    month_avg_account_count                  double            No
+5    total_ad_count                           bigint            No
+6    month_avg_ad_count                       double            No
+7    total_campaign_count                     bigint            No
+8    month_avg_campaign_count                 double            No
+9    corporation_size                         string            No
+10   corporation_promotion_channel_second     string            No
+11   business_background                      string            No
+12   ads_team_size                            string            No
+13   onboarding_intent_tier                   string            No
+14   month_avg_topup_amt                      decimal(38,4)     No
+15   month_avg_topup_cnt                      decimal(38,4)     No
+16   month_avg_spendaccount_num               double            No
+17   spendacc2applyopen_ratio                 double            No
+18   month_avg_spend_amt                      decimal(38,18)    No
+19   first_30d_topup_amt                      decimal(38,4)     No
+20   first_7d_spend_usd                       decimal(38,18)    No
+21   d8_to_d30_spend_usd                      decimal(38,18)    No
+22   d31_to_d60_spend_usd                     decimal(38,18)    No
+23   d61_to_d90_spend_usd                     decimal(38,18)    No
+24   d91_plus_spend_usd                       decimal(38,18)    No
+25   last_7d_spend_usd                        decimal(38,18)    No
+26   last_d8_to_d30_spend_usd                 decimal(38,18)    No
+27   last_d31_to_d60_spend_usd                decimal(38,18)    No
+28   last_d61_to_d90_spend_usd                decimal(38,18)    No
+29   last_d91_plus_spend_usd                  decimal(38,18)    No
+30   max_month_spendbyfirst_month_spend       decimal(38,18)    No
+31   max_month_spendbylast_month_spend        decimal(38,18)    No
+32   month_std2avg                            decimal(38,18)    No
+33   value_concentration_index                double            No
+34   financial_runway_months                  string            No
+35   ratio_avg_daily_spend_max_to_first       decimal(38,18)    No
+36   ratio_avg_daily_spend_max_to_last        decimal(38,18)    No
+37   value_concentration_index_daily          double            No
+38   days_since_last_spend                    bigint            No
+39   fb_spend_by_full_spend_ratio             decimal(38,18)    No
+40   tt_spend_by_full_spend_ratio             decimal(38,18)    No
+41   gg_spend_by_full_spend_ratio             decimal(38,18)    No
+42   fb_tt_gg_spend_by_full_spend_ratio       decimal(38,18)    No
+43   top_l2_category                          string            No
+44   top_l3_category                          string            No
+45   top_l2_and_l3_concatenated               string            No
+46   top_l2_l3_combined                       string            No
+47   is_concatenated_equal_to_combined        string            No
+48   avg_monthly_active_days                  double            No
+49   avg_monthly_event_count                  double            No
+50   avg_monthly_distinct_l3_count            double            No
+51   avg_monthly_distinct_l4_count            double            No
+52   top_l3_category_feature                  string            No
+53   top_l4_category_feature                  string            No
+54   core_feature_adoption_flag               int               No
+55   month_avg_country_count                  double            No
+56   month_avg_continent_count                double            No
+57   month_avg_custom_region_count            double            No
+58   top_custom_region_all                    string            No
+59   top_custom_region_fb                     string            No
+60   top_custom_region_tt                     string            No
+61   top_custom_region_gg                     string            No
+62   top_custom_region_spend_ratio            decimal(38,18)    No
+63   is_core_category_clothing                int               No
+64   is_core_category_accessories             int               No
+65   is_core_category_beauty                  int               No
+66   is_core_category_electronics             int               No
+67   core_category_count                      int               No
+68   has_high_risk_flag_real_money             int               No
+69   has_high_risk_flag_counterfeit            int               No
+70   has_high_risk_flag_cheat                  int               No
+71   has_high_risk_flag_gambling               int               No
+72   consumed_level2_category_count           bigint            No
+73   consumed_level3_category_count           bigint            No
+74   main_media                               string            No
+75   channel_count                            bigint            No
+76   main_regions                             string            No
+
+================================================================================
+END OF TRANSLATION
+================================================================================

@@ -1,0 +1,87 @@
+Table B Introduction: ads_admkt_cust_gcc_corporation_detail_df
+===============================================================
+Source: DataWorks - DataMap (Alibaba Cloud MaxCompute)
+URL: https://dataworks.data.aliyun.com/cn-shenzhen/dmc/odps-table/odps.sino_dc_ads.ads_admkt_cust_gcc_corporation_detail_df/detail
+
+Table Description: SC (SinoClick) Customer Information Wide Table, at corporation_id granularity, integrating all SC-related customers.
+
+Table Basic Information
+------------------------
+- Model: Yes
+- Views: 4
+- Reads: 37
+- Favorites: 0
+- Output Node: ads_admkt_cust_gcc_corporation_detail_df (10002036101) - View Code
+- MaxCompute Project: odps.sino_dc_ads
+- Region of Current Workspace: cn-shenzhen
+- Region of Compute Engine Instance: cn-shenzhen
+- Entity ID: maxcomputetable:::sino_dc_ads::ads_admkt_cust_gcc_corporation_detail_df
+- Approver: Tang Yaozu
+- Health Status: Excellent
+- Table Owner: hi30516830@aliyun.com:nico.tang
+- Created At: Jun 19, 2025, 17:06:02
+- Lifecycle: Permanent
+- Partitioned Table: Yes
+- Storage: 551.07 MB
+- Table Description: SC Customer Information Wide Table, at corporation_id granularity, integrating all SC-related customers
+- Table Type: TABLE
+
+Model Information
+------------------
+- Data Layer: Application Data Layer
+- Business Category: Ad Marketing - GCC Business Mart
+- Data Domain: -
+- Business Process: -
+- Storage Policy: -
+
+Business Information
+---------------------
+- Workspace: Shennuo Data Platform ads (Meetsocial Data Platform ads)
+- Environment: Production
+- Category: -
+- Display Name: -
+
+Technical Information
+----------------------
+- DDL Statement
+- Updated At: Jul 22, 2025, 17:48:49
+- Data Updated At: Jul 23, 2025, 14:41:17
+- Last data viewing time: Jul 23, 2025, 10:35:03
+
+Field Information
+------------------
+No.  Field Name                              Type     Description (Chinese)                                    Description (English)
+1    corporation_id                          string   Contracted entity ID                                     Contracted entity ID
+2    corporation_name                        string   Contracted entity name                                   Contracted entity name
+3    corporation_category_label              string   Customer label: "1. KA downgrade, KA transferred         Customer label: "1. KA downgrade,
+                                                      to SC to take over; 2. KA self-service account           KA transferred to SC; 2. KA self-
+                                                      opening: AM is KA, or AM is empty and BD is KA;          service account opening: AM is KA,
+                                                      3. SC certification: excluding 1 & 2, it is 3"           or AM is empty and BD is KA;
+                                                                                                                3. SC certified: excluding 1&2"
+4    corporation_size                        string   Customer size/scale                                      Customer size/scale
+5    corporation_kind                        string   Customer type                                            Customer type
+6    finance_abbr_id                         string   Finance abbreviation ID                                  Finance abbreviation ID
+7    nickname                                string   Finance abbreviation                                     Finance abbreviation
+8    rebate_abbr_id                          string   Rebate abbreviation ID                                   Rebate abbreviation ID
+9    rebate_abbreviation_name                string   Rebate abbreviation                                      Rebate abbreviation
+10   payment_type_name                       string   Payment method                                           Payment method
+11   corporation_industry_name               string   Customer primary industry                                Customer primary industry
+12   flow_status                             string   KA-to-SC transfer label                                  KA-to-SC transfer label
+13   bd_name                                 string   Business Development Chinese name                        BD Chinese name
+14   is_sc_bd                                string   Whether SC's BD                                          Whether SC's BD
+15   am_name                                 string   AM Chinese name                                          AM Chinese name
+16   is_sc_am                                string   Whether SC's AM                                          Whether SC's AM
+17   csm_name                                string   CSM Chinese name                                         CSM Chinese name
+18   is_sc_csm                               string   Whether SC's CSM                                         Whether SC's CSM
+19   op_name                                 string   OP Chinese name                                          OP (Operations) Chinese name
+20   is_sc_op                                string   Whether SC's OP                                          Whether SC's OP
+21   member_level_name                       string   Membership level                                         Membership level
+22   credit_level                            string   Certification level                                      Certification level
+23   is_regist_sc                            string   Whether has registered SC user_id                        Whether has registered SC user_id
+24   corporation_promotion_channel_name      string   Contracted entity customer acquisition channel            Customer acquisition channel
+25   corporation_promotion_channel_second    string   Contracted entity customer acquisition channel category   Customer acquisition channel category
+26   register_time                           string   Registration time                                        Registration time
+27   auth_date                               string   Enterprise certification time                            Enterprise certification time
+28   first_open_date                         string   First account opening application time                   First account opening application time
+29   first_opensuccess_date                  string   First successful account opening application time         First successful account opening time
+30   first_topup_date                        string   First top-up time (including wallet top-up)               First top-up time (incl. wallet)

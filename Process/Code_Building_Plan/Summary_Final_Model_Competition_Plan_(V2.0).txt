@@ -1,0 +1,60 @@
+Summary: Final Model Competition Plan (V2.0)
+Based on all of our discussions, the execution plan for Phase 2 is finalized as follows:
+
+Data Preparation (Data Preparation):
+
+Sole Input: Use the PCA-reduced, clean, low-dimensional dataset feature_set_A_pca that we have already generated as the input for all model competitions this round.
+
+Exploratory Analysis (Exploratory Analysis):
+
+Purpose: Gain an intuitive sense of the optimal K value range.
+
+Method:
+
+Randomly sample approximately 2,000 records from feature_set_A_pca.
+
+Run Hierarchical Clustering on this sample.
+
+Plot and analyze its Dendrogram, observing how many major, well-separated branches there are, to recommend the K value test range for the core model competition (e.g., k=3 to k=7).
+
+Core Model Competition (The Core Model Gauntlet):
+
+Objective: From different algorithmic philosophies, find the model that best describes the intrinsic structure of our clients.
+
+Method: On the full feature_set_A_pca dataset, run the following three core models separately:
+
+Model A: K-Means
+
+Positioning: Performance baseline model. Used for quickly and intuitively discovering spherical, uniformly dense core client groups.
+
+Model B: GMM (Gaussian Mixture Model)
+
+Positioning: Probabilistic insight model. Used to identify client "membership probabilities" -- a powerful tool for mining "incubatable potential clients."
+
+Model C: SOM (Self-Organizing Map)
+
+Positioning: Topological visualization model. Used to map high-dimensional client data onto a two-dimensional map, allowing us to intuitively see the relationships between different client groups (which groups are similar to each other, which are far apart).
+
+Model Evaluation and Selection (Evaluation & Selection):
+
+Objective: Combine quantitative metrics and qualitative insights to select the final "champion solution."
+
+Evaluation Method:
+
+Quantitative Evaluation (Quantitative):
+
+Plot the **Silhouette Score** curve, comparing the performance of K-Means and GMM at different K values. The peak of the silhouette score is the most important mathematical basis for our decision.
+
+Plot the GMM **BIC (Bayesian Information Criterion)** curve as an auxiliary reference for selecting the optimal K value for GMM (looking for the lowest BIC point).
+
+Qualitative Evaluation (Qualitative):
+
+Analyze the hierarchical clustering dendrogram to understand the macro-level hierarchy of clients.
+
+Analyze the SOM-generated two-dimensional map to understand the position and relationships of different client groups within the overall client ecosystem.
+
+Final Decision:
+
+Our final selection will be a comprehensive decision, based not only on which model and K value combination yields the highest silhouette score, but also on whether the resulting group segmentation resonates with insights from the SOM map and the dendrogram, forming a logically consistent story that can be understood by the business.
+
+For example, if the silhouette score is highest at K=5, and we can also clearly see 5 distinct areas separated by "blank zones" on the SOM map, then K=5 would be a highly credible choice.

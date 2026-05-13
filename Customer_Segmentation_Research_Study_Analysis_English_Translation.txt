@@ -1,0 +1,245 @@
+Customer Segmentation Research Study & Analysis
+================================================
+
+What is Client Segmentation?
+----------------------------
+Client segmentation is "the process of dividing customers into groups based on shared characteristics or needs of different customer groups," so that the business operations team or customer success manager team can provide different types of services to different customer groups (e.g., manual/human services or product services).
+
+Two Types of Client Segmentation
+---------------------------------
+
+WHO THEY ARE (Segmenting clients based on who they are)
+Examples: age, geography, urban or rural, income, relationship status, family, job category
+
+These are person-based customer labels. Applied to our contracted entities (corporations), examples include:
+  - Years since company registration
+  - Industry/sector the company operates in
+  - Company size
+  - Company revenue
+  - Company registration location
+
+1. Points to note here:
+   - Our contracted entity wide table contains company size and company category, which relate to "who" -- take note.
+   - Discussed with Qian Cheng and Mao Xingyi about which companies have potential; this mainly concentrates on specific company types (e.g., domestic self-owned light factories, domestic brand merchants), the company's intent, and overseas expansion experience (reference experience from other BUs).
+
+WHAT THEY DO (Segmenting clients based on behaviors)
+Behavior-based client segmentation varies in emphasis depending on different companies' business operation models, but generally we have the following behavioral segmentation dimensions:
+1. Customer balance scale in ad accounts
+2. Customer overall and time-period-based spend/consumption
+3. Customer retention duration and retention status
+4. Long-term loyalty (customer spend situation and retention situation)
+
+Different service approaches should be adopted based on strategic marketing and demand positioning suited to specific customer groups.
+
+1. Two points I need to add:
+   - Regarding how SinoClick should perform client segmentation based on customer behavior: this requires our "Thursday" research report on **client segmentation applications in media ad delivery companies**, after which we can conduct more detailed analysis based on our actual business.
+   - Companies will also have different spend and retention data across different media platforms. How do we correctly incorporate media channels into client segmentation? (Question *)
+
+Why Client Segmentation?
+-------------------------
+1. Identify high-potential customer groups with spending capacity; improve brand loyalty, spend, and retention by matching them with human/manual services. Systematically improve one-on-one service efficiency. (stay longer, spend more)
+   a. Better understand customers' thoughts and needs, more effectively match human services, **make customers feel cared for and valued through one-on-one interaction** (survey).
+
+2. Identify customers with average potential; maximize their spending capacity through efficient commercialized product operation services.
+   a. Find the most-up-to-date and most-eager needs of the majority of customers.
+
+3. Can we filter out certain characteristic dimensions of **junk/low-quality customers** to improve SinoClick's operational efficiency? (Question *)
+
+How to Segment and Target Clients Effectively
+-----------------------------------------------
+1. Research industry data in the market. (Feasible? Probably not very necessary) No
+
+2. Dig deep and examine your own customer base data (overview - digging inside)
+
+3. Look at subsets within the customer base (where to begin segmenting)
+   a. What similarities connect certain customers together?
+   b. What **correlations** have been discovered?
+   c. **How do you know** whether correlations exist? OR **How** can you find correlations?
+   d. How do you know which **service strategy** has the **greatest impact** on a specific customer group? Treat as no service now
+      i. Our current service strategies are already established; what we need to think more about is what kind of strategy should be matched to specific customer groups. (e.g., human services or commercialized product operations or else)
+      ii. Although customer profiles are based on customers' **traits and needs**, we still need to communicate with the BU to understand how our current services satisfy customer needs, and what kinds of needs (is this needed?)
+      iii. Conversely, do I need to provide different service recommendations to the BU based on customer profile analysis? (I think advisory outputs with recommendations are needed)
+
+Commonly Used Segmentation Variable Dimensions
+------------------------------------------------
+1. Who they are
+2. What they do
+3. What they need
+
+Being very specific with segmentation **may be useful** or **may not be useful**; this depends on our SinoClick client segmentation needs:
+  - Based on the specific situation and goals (when to be specific, when to be broad)
+
+Data Sources
+-------------
+Direct: Survey questionnaires + feedback (None)
+Indirect: Omni-channel analytics (Primary) + Frontline feedback (Secondary)
+
+Data Purpose
+-------------
+1. Client segmentation provides **valuable insights** for achieving **business objectives** (who to target, how to target them effectively to grow bottom line)
+2. **Match different journeys** to different customer groups, maximizing customers' **completion** of their matched journey.
+3. **Align** customer profiles **with goals** to guide how **specific** these client segmentation tiers should be. (how specific)
+
+LINK
+https://www.qualtrics.com/experience-management/brand/customer-segmentation/
+Customer Segmentation Analysis: Definition & Methods - Qualtrics
+
+
+How Should SaaS Service Companies Develop Client Segmentation Strategies?
+==========================================================================
+
+Core Framework
+--------------
+
+Importance of SaaS Client Segmentation
+1. Personalized marketing, customized communication, improving customer group relevance and engagement.
+2. Identifying needs and pain points, building features and solutions that meet specific needs.
+3. Identifying high-risk and **high-value** segments, providing targeted retention strategies.
+
+SaaS Customer Segmentation Types
+----------------------------------
+1. Demographic: e.g., company industry, company size, geographic region, company age... Assumption: customers with the same characteristics also have the same expectations/needs. (Needs to be checked) (Ad delivery country/region/category *)
+
+2. Firmographic, B2B SaaS context: e.g., industry, size, number of employees, revenue...
+
+3. Need-based: Company's expected outcomes, pain points to advance, goals...
+
+4. *Value-based: e.g., Total Growth Value (incremental spend, multi-media multi-ad-account); Stable Earned Annual Recurring Revenue (eARR); Potential Annual Recurring Revenue from additional services not yet purchased (wARR, key to measuring growth); Depth and breadth of product feature usage, especially usage of key features tied to core value (Product adoption rate: customer stickiness); LTV (Customer Lifetime Value): total net revenue over the entire duration of the business relationship (spend amount + retention duration); MRR (Monthly Recurring Revenue): predictable, recurring total revenue obtained from subscription customers each month, one of the most core health metrics. Churn rate (Customer Churn Rate): the percentage of customers who stop spending or churn within a specific period. ****
+
+5. Psychographic (delta)
+
+6. Technographic: device type, platform or operating system, browser... (to review)
+
+How to Do Client Segmentation for SaaS Products?
+--------------------------------------------------
+1. Define client segmentation goals (**using the SMART method**) (Customer lifecycle (beginner + mature + decline) / (high potential / low potential))
+2. Thoroughly analyze existing customer wide table data.
+3. Based on defined goals, search for insights, ultimately leading to matching product services.
+
+LINK
+https://userpilot.com/blog/customer-segmentation-guide/
+Customer Segmentation: The Ultimate Guide for SaaS
+
+
+PLG SaaS Company Client Segmentation
+======================================
+PLG SaaS businesses rely on self-service customer (SinoClick.com) usage and product-based activities to drive product adoption and conversion. Therefore, PLG SaaS businesses need not only to understand customer characteristics but also to track customer spending behavior and usage patterns, as well as product engagement dimension analysis.
+
+1. Product Usage Segmentation:
+   a. Segment customers based on product usage and activity patterns
+   Example: e.g.
+   [Table: Power Users vs. On-the-Fence Users vs. Non-Active Users]
+   - Usage: Regular / Irregular / Little to none
+   - Feature Utilization: Full-range / Limited / Very limited
+   - Derived Value: Maximum / Partial / Very little, if any
+   - Increase Engagement/Conversion:
+     * Power Users: Advanced feature tutorials, Exclusive tips and tricks, Feedback surveys
+     * On-the-Fence Users: Personalized onboarding, Targeted messaging of unexplored features, Educational content
+     * Non-Active Users: Reactivation campaigns, Special offers, Reminders of product benefits
+
+2. Industry Segmentation:
+   a. Segment customers by their vertical industry or sector.
+
+3. Feature Adoption Segmentation:
+   a. Identify customers who have not fully explored or utilized key features of the PLG SaaS product.
+
+4. Customer Lifecycle Segmentation:
+   a. Based on the stage of the customer journey, including registered customers, successfully opened account customers, and spending customers, along with their corresponding first trigger times, to understand the corresponding needs and pain points (?).
+
+LINK
+https://harmonyventurelabs.com/user-segmentation-plg-saas/
+User Segmentation: Unlocking Product Led Growth
+
+
+B2B and B2C Client Segmentation
+=================================
+
+B2B (*)
+-------
+B2B business processes typically involve multiple decision factors, longer business cycles, and rational, data-driven, ROI-centered business decisions. For these reasons, B2B companies may use firmographics, purchasing behavior, decision factors, customer needs, lifecycle stages, and technology stacks as segmentation models.
+
+B2C
+---
+B2C business decisions are typically driven by individuals or families based on factors such as emotions, convenience, reputation, personal preferences, or trends. Because of this, B2C customer success teams may use demographics, psychographics, geographic location, behavioral data, and needs and interests to segment customers.
+
+LINK
+https://learnexperts.ai/blog/customer-segmentation-for-customer-success/
+Customer Segmentation Strategies for Customer Success
+
+
+Practical Application Examples of Behavioral Segmentation and Company Nature Segmentation
+===========================================================================================
+
+Behavioral Segmentation Scenarios
+-----------------------------------
+1. Analyze the lifecycle stage the customer is in and the time spent there, to determine the customer's business progression stage.
+2. Analyze customer interaction data with web pages on SinoClick.com -- what tracking events were triggered, which web pages were visited, duration of important behaviors -- to understand customer habits and preferences.
+3. Analyze the customer's final interaction and stopping point within their lifecycle, to obtain the complete lifecycle picture and determine which stage of interaction depth the customer falls into.
+4. Analyze the customer's multi-media spend patterns, spending cycles, and ad account activity to understand the customer's economic activity situation.
+
+Company Nature Segmentation
+-----------------------------
+1. Analyze the industry or vertical industry the company belongs to, looking for connections between customer groups and industries.
+2. Based on company size -- KA, SMB, or PA -- look for reasons behind client segmentation and scale, and determine what kind of service should be matched. (Can be differentiated, but significance is limited)
+3. Based on the company's annual revenue, estimate the company's spending capacity and develop corresponding marketing strategies and product services.
+
+Key Questions Raised
+---------------------
+- The two tables I currently have mainly contain customer spend data, customer retention lifecycle data, and account opening activity data. There is not much data or labeling regarding customer needs. Do we need to obtain demand-side data? How to obtain it?
+
+- Generally speaking, matching services to customer groups is done after customer profiles are established. However, SinoClick already has established services (e.g., commercialized product operations or CSM human service); it just needs a clear segmentation. If we do not consider subsequent services, how can we ensure that my client segmentation can be matched to corresponding services?
+
+Common Data Modeling Methods
+=============================
+
+RFMA K-means Clustering (or other clustering methods)
+------------------------------------------------------
+- Recency: recent interaction level
+- Frequency: activity, spend, usage frequency
+- Monetary: spend situation
+- Adoption: media channel adoption rate
+
+Then for each cluster, analyze each category's company size, type, etc., introducing company nature label dimensions.
+
+Gradient Boosting (XGBoost, LightGBM) or Logistic Regression (supervised learning training)
+---------------------------------------------------------------------------------------------
+- Define target variable (?)
+- Use the previous labels to create training sets
+- Train supervised learning model, develop labels.
+
+
+How HubSpot Does Client Segmentation
+======================================
+
+Pain Point
+-----------
+HubSpot's customer base is extremely large, ranging from individuals running personal blogs to large enterprises with thousands of employees -- all using their products. Initially, their sales and customer service teams were struggling because they couldn't possibly serve a free user and a major client paying hundreds of thousands of dollars annually in the same way. Without segmentation, not only would resources be wasted, but the customer experience on both sides would suffer.
+
+Segmentation Dimensions
+-------------------------
+
+"Customer Value" Segmentation (Tier-Based Segmentation)
+Look at how much value a customer can bring, or how much potential they have.
+- High-value customers (High-Touch): For example, Fortune 500 large enterprises that pay the most and have the greatest potential.
+- Medium-value customers (Low-Touch): Growing mid-size companies with some level of payment, needing some support.
+- Mass-market customers (Tech-Touch): Small companies or free users who pay very little, extremely large in number.
+
+"Product Usage Behavior" Segmentation (Behavioral Segmentation)
+Looking at customer size alone is not enough; you also need to see how customers actually use the product.
+- Deep users: Not only use their core marketing tools but also purchased their sales and customer service tools, deeply integrated.
+- Single-function users: May only use their email sending feature, ignoring other functions.
+- Low-activity users: Registered but rarely log in, at risk of churning.
+
+Combined Dimensions & Service Strategies
+------------------------------------------
+For high-value + deep-usage customers: They assign their most elite Customer Success Managers (CSMs) to provide "one-on-one" concierge service, hold regular strategy meetings, and proactively help customers plan how to achieve greater success.
+
+For medium-value customers: They adopt a "one-to-many" model. For example, one CSM manages several hundred customers, providing help through regular online training sessions and sharing meetings rather than one-on-one chats.
+
+For mass-market customers: They rely entirely on "automation and self-service." They solve customer problems through massive online help documentation, intelligent chatbots, and auto-triggered onboarding emails.
+
+Benefits
+---------
+- Resources are used where they matter most: Elite CSMs serve the most important customers, with extremely high efficiency.
+- Customer experience improved: Large clients feel valued, small clients can quickly find answers -- each gets what they need.
+- Revenue increased: Through deep service for high-value customers, they more easily sold additional products (cross-selling and value-added services), and customer retention rates also improved.

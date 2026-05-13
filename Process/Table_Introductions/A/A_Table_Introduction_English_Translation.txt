@@ -1,0 +1,59 @@
+Table A Introduction: tmp_gcc_spend_20250713
+=============================================
+Source: DataWorks - DataMap (Alibaba Cloud MaxCompute)
+URL: https://dataworks.data.aliyun.com/cn-shenzhen/dmc/odps-table/odps.sino_ex_gcc_dev.tmp_gcc_spend_20250713/detail
+
+Table Basic Information
+------------------------
+- Views: 1
+- Reads: 0
+- Favorites: 0
+- Output Node: None
+- MaxCompute Project: odps.sino_ex_gcc_dev
+- Region of Current Workspace: cn-shenzhen
+- Region of Compute Engine Instance: cn-shenzhen
+- Entity ID: maxcomputetable:::sino_ex_gcc_dev::tmp_gcc_spend_20250713
+- Approver: Wu Si
+- Health Status: Excellent
+- Table Owner: hi30516830@aliyun.com:ruth.wu
+- Created At: Jul 14, 2025, 11:57:53
+- Lifecycle: 60
+- Partitioned Table: No
+- Storage: 88.11 MB
+- Table Description: (none provided)
+- Table Type: TABLE
+- Classifications: (none)
+
+Business Information
+---------------------
+- Workspace: sino_ex_gcc
+- Environment: Development
+- Category: -
+- Display Name: -
+
+Permission Information
+-----------------------
+- My Permissions: Click to View
+
+Technical Information
+----------------------
+- DDL Statement
+- Updated At: Jul 14, 2025, 11:57:53
+- Data Updated At: Jul 14, 2025, 11:57:53
+- Last data viewing time: Jul 21, 2025, 17:47:30
+
+Field Information
+------------------
+No.  Field Name                   Type              Description
+1    client_id                    string
+2    corporation_size_name_en     string
+3    spend_date                   string
+4    spend_date_beijing           string
+5    channel_name                 string
+6    account_id                   string
+7    account_status_ch            string
+8    spend                        decimal(38,18)
+
+Partition Fields
+-----------------
+(No data)

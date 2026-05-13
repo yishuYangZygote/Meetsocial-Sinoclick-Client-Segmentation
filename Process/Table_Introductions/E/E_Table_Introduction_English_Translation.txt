@@ -1,0 +1,87 @@
+Table E Introduction: ads_admkt_adver_pub_multi_channel_country_ad_di
+======================================================================
+Source: DataWorks - DataMap (Alibaba Cloud MaxCompute)
+URL: https://dataworks.data.aliyun.com/cn-shenzhen/dmc/odps-table/odps.sino_dc_ads.ads_admkt_adver_pub_multi_channel_country_ad_di/
+
+Table Description: Cross-channel - Country dimension - Ad performance data
+
+Table Basic Information
+------------------------
+- Model: Yes
+- Views: 3
+- Reads: 1K
+- Favorites: 0
+- Output Node: ads_admkt_adver_pub_multi_channel_country_ad_di_repair (10001271523)
+- MaxCompute Project: odps.sino_dc_ads
+- Region of Current Workspace: cn-shenzhen
+- Region of Compute Engine Instance: cn-shenzhen
+- Entity ID: maxcomputetable:::sino_dc_ads::ads_admkt_adver_pub_multi_channel_country_ad_di
+- Approver: Tang Yaozu
+- Health Status: Excellent
+- Table Owner: hi30516830@aliyun.com:nico.tang
+- Created At: Jul 12, 2024, 15:20:02
+- Lifecycle: Permanent
+- Partitioned Table: Yes
+- Storage: 604.70 GB
+- Table Description: Cross-channel - Country dimension - Ad performance data
+- Table Type: TABLE
+- Classifications: Total 3 Tags (HashCluster)
+
+Model Information
+------------------
+- Data Layer: Application Data Layer
+- Business Category: Ad Marketing - Ad Public Mart - Multi-Channel Integration
+- Data Domain: -
+- Business Process: -
+- Storage Policy: -
+
+Business Information
+---------------------
+- Workspace: Shennuo Data Platform ads (Meetsocial Data Platform ads)
+- Environment: Production
+- Category: -
+- Display Name: -
+
+Technical Information
+----------------------
+- DDL Statement
+- Updated At: Mar 17, 2025, 17:36:13
+- Data Updated At: Jul 22, 2025, 23:59:44
+- Last data viewing time: Jul 23, 2025, 01:03:30
+
+Field Information
+------------------
+No.  Field Name                  Type     Description (Chinese)              Description (English)
+1    channel_name                string   Media channel name                 Media channel name
+2    calendar_date               string   Business date                      Business date
+3    year_month                  string   Business month                     Business month
+4    monday_of_week              string   Monday of the week                 Monday of the week
+5    sunday_of_week              string   Sunday of the week                 Sunday of the week
+6    month_first_date            string   First day of the month             First day of the month
+7    month_last_date             string   Last day of the month              Last day of the month
+8    quarter_first_date          string   First day of the quarter           First day of the quarter
+9    quarter_last_date           string   Last day of the quarter            Last day of the quarter
+10   year_first_date             string   First day of the year              First day of the year
+11   year_last_date              string   Last day of the year               Last day of the year
+12   corporation_id              string   Contracted entity ID               Contracted entity ID
+13   corporation_name            string   Contracted entity name             Contracted entity name
+14   account_id                  string   Account ID                         Account ID
+15   account_name                string   Account name                       Account name
+16   source_account_id           string   Account ID - with format           Account ID - formatted
+17   campaign_id                 string   Campaign ID                        Campaign ID (Ad campaign)
+18   campaign_name               string   Campaign name                      Campaign name (Ad campaign)
+19   adgroup_id                  string   Ad group ID                        Ad group ID
+20   adgroup_name                string   Ad group name                      Ad group name
+21   ad_id                       string   Ad ID                              Ad ID
+22   ad_name                     string   Ad name                            Ad name
+23   ad_format                   string   Ad format                          Ad format
+24   objective                   string   Ad objective / Marketing objective Ad objective / Marketing objective
+25   optimization_goal           string   Optimization goal                  Optimization goal
+26   audience_interests          string   Audience interest keywords         Audience interest keywords
+27   audience_type               string   Audience type                      Audience type
+28   audience_type_category      string   Audience type category             Audience type category
+29   os_type                     string   Operating system                   Operating system
+30   bid_strategy                string   Bidding strategy                   Bidding strategy
+31   website_address             string   Website address                    Website address
+32   app_id                      string   App ID                             App ID
+33   app_name                    string   App name                           App name
