@@ -1,6 +1,6 @@
 # Client Segmentation for SinoClick (Meetsocial) — Unsupervised Learning on 10,000 B2B Advertisers
 
-> End-to-end data science project: from raw SQL extraction on Alibaba Cloud MaxCompute, through feature engineering on 60+ mixed-type variables, PCA dimensionality reduction, a six-model clustering competition, to final business-ready client profiles delivered to operations teams.
+> End-to-end data science project: from raw SQL extraction on Alibaba Cloud MaxCompute, through feature engineering on 76 mixed-type fields, PCA dimensionality reduction, a six-model clustering competition, to final business-ready client profiles delivered to operations teams.
 
 ## Business Context
 
@@ -20,7 +20,7 @@ Previously, client service strategies were applied uniformly. This project repla
 | Stage | Details |
 | --- | --- |
 | **Source** | 8 production tables on Alibaba Cloud MaxCompute (DataWorks), covering client master data, ad account activity, spend by media channel, campaign performance, and web behavioral events |
-| **Extraction** | Custom SQL (~1,500 lines) joining across tables A through H; built a temporary wide table of 9,999 active client records with 60+ raw features |
+| **Extraction** | Custom SQL (~1,500 lines) joining across tables A through H; built a temporary wide table of 9,999 active client records with 76 fields |
 | **Scope** | All clients with historical ad spend; partitioned data spanning 2022-12 through 2025-07 |
 
 ### Feature Engineering
